@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+class Main {
+	public static void main(String[] args) {
+		int points = 0;
+		System.out.println("");System.out.println("Простенька вікторина");
+		System.out.println("");
+		System.out.println("Виберіть правильний варіант:\n1. 2+2=4\n2. 3+4=6");
+		Scanner input = new Scanner(System.in);
+		String check = input.next();
+		if (check.equals("1")) {
+			points += 1;
+		}
+		System.out.println("");
+		System.out.println("Виберіть правильний варіант:\n1. Столиця Канади: Вашингтон\n2. Столиця Італії: Рим");
+		check = input.next();
+		if (check.equals("2")) {
+			points += 1;
+		}
+		System.out.println("");
+		System.out.println("Виберіть правильний варіант:\n1. Один байт дорівнює 10 біт\n2. Один кілобайт дорівнює 1024 байт");
+		check = input.next();
+		if (check.equals("2")) {
+			points += 1;
+		}
+		System.out.println("");
+		System.out.println("Ваш результат:");
+		switch (points){
+				case 0:
+			System.out.println("Зовсім зле :(");
+			break;
+			case 1:
+			System.out.println("Так собі");
+			break;
+			case 2:
+			System.out.println("Непогано");
+			break;
+			case 3:
+			System.out.println("Прекрасно!");
+			break;
+		}
+	}
+}
